@@ -6,8 +6,8 @@ const debug = require("debug")("app:all-dev");
 //////////////////////////////////////
 // DB CONNECTION
 function connectDB() {
-	const dbUrl =
-		config.get("environment") != "production" ? config.get("database") : "PROD";
+	const dbUrl = config.get("database");
+	const dbMessage = config.get("environment") != "production" ? dbUrl : "PROD";
 	mongoose
 		.connect(dbUrl, {
 			useNewUrlParser: true,
@@ -16,7 +16,7 @@ function connectDB() {
 		.then(() => {
 			appLogger.consoleLogger.log({
 				level: "info",
-				message: "Connected to DB: " + dbUrl,
+				message: "Connected to DB: " + dbMessage,
 			});
 		});
 	//.catch((err) => debug("Error connecting to DB: " + err));
