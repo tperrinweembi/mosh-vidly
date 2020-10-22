@@ -1,0 +1,9 @@
+{
+	"name": "My Express App - TESTS",	
+	"environment": "test",
+	"database": "mongodb://localhost/mosh-vidly_tests",
+	"email":{
+		"host":"dev-mail-server"
+	},
+	"jwtPrivateKey": "1234"
+}

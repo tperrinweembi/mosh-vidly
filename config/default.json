@@ -1,0 +1,8 @@
+{
+	"name": "My Express App - unset environment",	
+	"environment": "default",
+	"database": "mongodb://localhost/mosh-vidly",
+	"email":{
+		"host":"dev-mail-server"
+	}
+}
