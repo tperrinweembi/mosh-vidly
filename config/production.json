@@ -1,7 +1,6 @@
 {
 	"name": "My Express App - Production",
 	"environment": "production",
-	"database": "mongodb://localhost/mosh-vidly",
 	"email":{
 		"host":"prod-mail-server"
 	}
