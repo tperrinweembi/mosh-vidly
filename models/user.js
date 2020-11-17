@@ -52,7 +52,7 @@ function validateUser(proposedUser) {
 		name: Joi.string().min(2).max(50).required(),
 		email: Joi.string().min(5).max(255).required().email(),
 		password: Joi.string().min(5).max(1024).required(),
-		isAdmin: Joi.boolean().required(),
+		// isAdmin: Joi.boolean().required(),
 	};
 
 	return Joi.validate(proposedUser, userValidation);
